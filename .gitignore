@@ -1,0 +1,32 @@
+# Composer
+vendor/
+composer.phar
+
+# Environmental Variables
+.env
+config/config.local.php
+config/*.json
+config/*.sql
+
+# Logs
+logs/*.log
+*.log
+error_log
+
+# Uploads
+uploads/*
+!uploads/.gitkeep
+
+# Backups
+backups/database/*.sql.gz
+backups/json/*.json
+
+# OS / IDE
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Docker
+.docker/
+

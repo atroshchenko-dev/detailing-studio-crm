@@ -1,0 +1,47 @@
+{
+    "name": "detalstudio/detalstudio",
+    "description": "Система управління автодетейлінг студією",
+    "type": "project",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "DetalStudio Team",
+            "email": "info@detalstudio.local"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "google/apiclient": "^2.15",
+        "monolog/monolog": "^3.10",
+        "mpdf/mpdf": "^8.2",
+        "phpmailer/phpmailer": "^6.8",
+        "vlucas/phpdotenv": "^5.6"
+    },
+    "require-dev": {
+        "phpstan/phpstan": "^1.10",
+        "squizlabs/php_codesniffer": "^3.7",
+        "phpunit/phpunit": "^10.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "includes/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "install-deps": "composer install --no-dev --optimize-autoloader",
+        "update-deps": "composer update --no-dev --optimize-autoloader",
+        "analyze": "vendor/bin/phpstan analyse --memory-limit=1G",
+        "cs-check": "vendor/bin/phpcs",
+        "cs-fix": "vendor/bin/phpcbf",
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true
+    }
+}

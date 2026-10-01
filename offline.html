@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uk" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Немає з'єднання | DetalStudio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #212529;
+            color: #f8f9fa;
+        }
+        .offline-container {
+            text-align: center;
+            max-width: 500px;
+            padding: 2rem;
+        }
+        .icon-offline {
+            font-size: 5rem;
+            margin-bottom: 1.5rem;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <div class="offline-container">
+        <div class="icon-offline">
+            🚫
+        </div>
+        <h1 class="mb-3">Відсутнє з'єднання</h1>
+        <p class="lead text-muted mb-4">
+            Схоже, ви офлайн. Будь ласка, перевірте ваше інтернет-з'єднання.
+        </p>
+        <button onclick="window.location.reload()" class="btn btn-primary btn-lg">
+            Спробувати знову
+        </button>
+    </div>
+</body>
+</html>
