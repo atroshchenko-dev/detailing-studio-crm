@@ -6,6 +6,8 @@ namespace Tests\Unit;
 
 use PHPUnit\Framework\TestCase;
 
+use function App\e;
+
 /**
  * Unit tests for the global e() XSS escape helper
  * defined in App\Security (Security.php)
